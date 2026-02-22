@@ -1,5 +1,10 @@
 .venv/
+venv/
 __pycache__/
+*.pyc
+
 site/
+
 .DS_Store
+Thumbs.db
 *.log
