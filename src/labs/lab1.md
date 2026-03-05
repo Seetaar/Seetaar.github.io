@@ -1,4 +1,4 @@
-# Лабораторная работа №1: Создание статического сайта
+﻿# Лабораторная работа №1: Создание статического сайта
 
 ## Цель работы
 
@@ -29,3 +29,71 @@
             - lab3.md
 
 ## Реализация
+
+Файл `mkdocs.yml`:
+
+```yaml
+site_name: "Портфолио | Seetaar"
+site_description: "Учебное портфолио студента ITMO University"
+site_author: "Seetaar"
+site_url: "https://Seetaar.github.io"
+
+docs_dir: src
+site_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep-purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Перейти в тёмную тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep-purple
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Перейти в светлую тему
+  font:
+    text: Roboto
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Главная: index.md
+  - Об авторе: about.md
+  - Лабораторные работы:
+      - labs/labs_index.md
+      - "Лаба 1": labs/lab1.md
+      - "Лаба 2": labs/lab2.md
+      - "Лаба 3": labs/lab3.md
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - def_list
+```

@@ -1,4 +1,4 @@
-site_name: "Портфолио | Seetaar"
+﻿site_name: "Портфолио | Seetaar"
 site_description: "Учебное портфолио студента ITMO University"
 site_author: "Seetaar"
 site_url: "https://Seetaar.github.io"
@@ -32,6 +32,7 @@ theme:
     - navigation.indexes
     - search.highlight
     - content.code.copy
+    - content.code.annotate
 
 nav:
   - Главная: index.md
@@ -46,14 +47,17 @@ nav:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.details
   - attr_list
   - md_in_html
   - tables
   - admonition
-  - pymdownx.details
-
-plugins:
-  - search
+  - def_list
