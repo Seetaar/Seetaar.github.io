@@ -1,7 +1,7 @@
 ﻿site_name: "Портфолио | Seetaar"
 site_description: "Учебное портфолио студента ITMO University"
 site_author: "Seetaar"
-site_url: "https://seetaar.sourcecraft.site/lab-3"
+site_url: "https://sourcecraft.dev/seetaar/lab-3.git"
 #site_url: "https://Seetaar.github.io"
 
 docs_dir: src
