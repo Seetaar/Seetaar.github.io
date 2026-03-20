@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/Seetaar/Seetaar.github.io.git
+[remote "sourcecraft"]
+	url = ssh://ssh.sourcecraft.dev/seetaar/site-lab3.git
+	fetch = +refs/heads/*:refs/remotes/sourcecraft/*
