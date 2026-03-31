@@ -1,0 +1,16 @@
+on:
+  push:
+    workflows: build-site
+    filter:
+      branches: main
+
+workflows:
+  build-site:
+    tasks:
+      - name: build-site
+        cubes:
+          - name: build-site
+            image: python:3.11-slim
+            script:
+              - pip install mkdocs-material
+              - mkdocs build

@@ -9,3 +9,6 @@
 [remote "sourcecraft"]
 	url = ssh://ssh.sourcecraft.dev/seetaar/site-lab3.git
 	fetch = +refs/heads/*:refs/remotes/sourcecraft/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
