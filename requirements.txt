@@ -1,0 +1,48 @@
+# =============================================================================
+# Зависимости проекта: Портфолио | Seetaar
+# Сайт: https://Seetaar.github.io/
+# Тема: Material for MkDocs
+# =============================================================================
+# Установка: pip install -r requirements.txt
+# =============================================================================
+
+# --- Ядро MkDocs ---
+mkdocs==1.6.1
+Markdown==3.10.2
+
+# --- Тема оформления: Material ---
+mkdocs-material==9.7.1
+mkdocs-material-extensions==1.3.1
+
+# --- Расширения для кода и форматирования ---
+pymdown-extensions==10.20.1
+Pygments==2.19.2
+
+# --- Шаблонизация и рендеринг ---
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+pyyaml_env_tag==1.1
+
+# --- Сетевые зависимости (для плагинов и сборки) ---
+requests==2.32.5
+urllib3==2.6.3
+certifi==2026.1.4
+charset-normalizer==3.4.4
+idna==3.11
+
+# --- Утилиты и системные зависимости ---
+babel==2.18.0
+backrefs==6.1
+click==8.3.1
+colorama==0.4.6
+ghp-import==2.1.0
+mergedeep==1.3.4
+mkdocs-get-deps==0.2.0
+packaging==26.0
+paginate==0.5.7
+pathspec==1.0.4
+platformdirs==4.8.0
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+six==1.17.0
+watchdog==6.0.0
