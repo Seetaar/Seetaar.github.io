@@ -12,7 +12,7 @@
         <meta name="author" content="Seetaar">
       
       
-        <link rel="canonical" href="https://sourcecraft.dev/seetaar/lab-3.git/labs/lab3/">
+        <link rel="canonical" href="https://Seetaar.github.io/labs/lab3/">
       
       
         <link rel="prev" href="../lab2/">
@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#no3" class="md-skip">
+        <a href="#no3-cicd-sourcecraft" class="md-skip">
           Skip to content
         </a>
       
@@ -583,21 +583,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        -
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Задание
+        Ход Работы
       
     </span>
   </a>
@@ -608,18 +597,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Структура проекта
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Реализация
+        Вывод
       
     </span>
   </a>
@@ -680,21 +658,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        -
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Задание
+        Ход Работы
       
     </span>
   </a>
@@ -705,18 +672,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Структура проекта
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Реализация
+        Вывод
       
     </span>
   </a>
@@ -740,23 +696,38 @@
 
 
 
-<h1 id="no3">Лабораторная работа №3:</h1>
+<h1 id="no3-cicd-sourcecraft">Лабораторная работа №3: CI/CD для статического сайта в SourceCraft</h1>
 <h2 id="_1">Цель работы</h2>
-<h2 id="-">-</h2>
 <ul>
-<li></li>
+<li>Настроить процесс CI/CD для статического сайта. Добавить репозиторий на SourceCraft</li>
 </ul>
-<h2 id="_2">Задание</h2>
+<h2 id="_2">Ход Работы</h2>
 <ol>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>
+<p>Создание репозитория на SourceCraft</p>
+</li>
+<li>
+<p>Настройка CI/CD для автоматизации</p>
+<p>Для автоматизации процесса сборки и публикации были созданы конфигурационные файлы в директориях .sourcecraft/ и .github/ (был добавлен позже). Workflow автоматически запускается при каждом push в ветку main.
+3. Перенос данных</p>
+<p>Для полного переноса истории коммитов и всех веток использована команда push --mirror
+4. Развертывание сайта</p>
+<p>На платформе SourceCraft автоматически запустился CI/CD-пайплайн.
+Куб build-docs:
+Загружен образ python:3.14-slim.
+Установлены зависимости из requirements.txt.
+Сгенерированы статические HTML-файлы командой mkdocs build.
+Куб publish-site:
+Создана (или обновлена) ветка release.
+Содержимое папки ./site скопировано в корень ветки.
+Изменения закоммичены и отправлены в удалённый репозиторий.
+Файл .sourcecraft/sites.yaml связал ветку release с веб-хостингом.
+5. Итог</p>
+<p>Сайт успешно открыт по адресу: https://seetaar.sourcecraft.site/lab-3/.</p>
+</li>
 </ol>
-<h2 id="_3">Структура проекта</h2>
-<h2 id="_4">Реализация</h2>
+<h2 id="_3">Вывод</h2>
+<p>В ходе выполнения лабораторной работы №3 был успешно осуществлен перенос веб-сайта с платформы GitHub Pages на платформу SourceCraft.</p>
 
 
 
