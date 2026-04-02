@@ -42,6 +42,9 @@ nav:
       - "Лаба 1": labs/lab1.md
       - "Лаба 2": labs/lab2.md
       - "Лаба 3": labs/lab3.md
+      - "Лаба 4": labs/lab4.md
+      - "Лаба 5": labs/lab5.md
+  - Примеры кода: code-examples.md
 
 
 markdown_extensions:
@@ -61,3 +64,10 @@ markdown_extensions:
   - tables
   - admonition
   - def_list
+
+plugins:
+    - search
+    - macros:
+        verbose: true
+        on_error_fail: false
+
